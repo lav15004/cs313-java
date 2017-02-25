@@ -41,7 +41,7 @@ public class HelloServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1 class=\"heart\">Hello CS 313</h1>");
-            out.println("<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-latest.min.js\"></script>");
+            out.println("<script type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js'></script>");
             out.println("<script type=\"text/javascript\">");
             out.println("$(function animateHeart() {");
             out.println("    $('.heart').animate({");
