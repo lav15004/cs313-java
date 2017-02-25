@@ -40,7 +40,15 @@ public class HelloServlet extends HttpServlet {
             out.println("<title>Servlet HelloServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hello CS 313</h1>");
+            out.println("<h1 class=\"heart\">Hello CS 313</h1>");
+            out.println("<script type=\"text/javascript\" src=\"http://code.jquery.com/jquery-latest.min.js\"></script>");
+            out.println("<script type=\"text/javascript\">");
+            out.println("$(function animateHeart() {");
+            out.println("    $('.heart').animate({");
+            out.println("        fontSize: $('.heart').css('fontSize') == '75px' ? '50px' : '75px'");
+            out.println("    }, 500, animateHeart);");
+            out.println("});");
+            out.println("</script>");
             out.println("</body>");
             out.println("</html>");
         }
